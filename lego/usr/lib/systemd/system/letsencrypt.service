@@ -1,0 +1,20 @@
+[Unit]
+Description=Renews Let's Encrypt certificates
+
+[Service]
+# We're making etcd execute this as he's the user of the
+# resulting certificates
+User=etcd
+EnvironmentFile=/config/lego/lego.env
+ExecStart=/usr/local/bin/lego \
+          --path $LEGO_PATH \
+          --dns $LEGO_PROVIDER \
+          --email $LEGO_EMAIL \
+          --domains $LEGO_DOMAINS \
+          renew \
+          --days 45
+Restart=on-failure
+RestartSec=5min
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,8 @@
+Package: lego
+Version: 2.5.0-0
+Section: base
+Priority: optional
+Architecture: amd64
+Maintainer: Arnar Ingason <codedbearder@arnarg.fastmail.com>
+Description: lego
+ Let's Encrypt client and ACME library written in Go
