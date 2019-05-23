@@ -1,5 +1,6 @@
 [Unit]
 Description=Node Exporter
+After=network.target
 
 [Service]
 Restart=always
