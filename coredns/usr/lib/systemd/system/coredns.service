@@ -1,0 +1,9 @@
+[Unit]
+Description=CoreDNS server
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/coredns -conf /config/coredns/Corefile
+
+[Install]
+WantedBy=multi-user.target

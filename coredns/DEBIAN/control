@@ -1,0 +1,8 @@
+Package: coredns
+Version: 1.5.0-0
+Section: base
+Priority: optional
+Architecture: amd64
+Maintainer: Arnar Ingason <codedbearder@arnarg.fastmail.com>
+Description: coredns
+ CoreDNS is a DNS server that chains plugins
