@@ -1,0 +1,5 @@
+# Don't commit any .deb files
+*.deb
+
+# No vim swp files please
+*.swp

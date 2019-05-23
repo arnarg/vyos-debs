@@ -1,0 +1,11 @@
+[Unit]
+Description=Node Exporter
+
+[Service]
+Restart=always
+User=prometheus
+ExecStart=/usr/local/bin/node_exporter
+TimeoutStopSec=20s
+
+[Install]
+WantedBy=multi-user.target
