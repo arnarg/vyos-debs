@@ -1,0 +1,8 @@
+Package: etcd
+Version: 3.3.13-0
+Section: base
+Priority: optional
+Architecture: amd64
+Maintainer: Arnar Ingason <codedbearder@arnarg.fastmail.com>
+Description: etcd
+ Distributed reliable key-value store for the most critical data of a distributed system
