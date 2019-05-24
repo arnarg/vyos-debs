@@ -1,6 +1,6 @@
 [Unit]
 Description=CoreDNS server
-After=network.target
+After=network.target etcd.service
 
 [Service]
 ExecStart=/usr/local/bin/coredns -conf /config/coredns/Corefile
