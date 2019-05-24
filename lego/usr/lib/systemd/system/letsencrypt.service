@@ -2,9 +2,6 @@
 Description=Renews Let's Encrypt certificates
 
 [Service]
-# We're making etcd execute this as he's the user of the
-# resulting certificates
-User=etcd
 EnvironmentFile=/config/lego/lego.env
 ExecStart=/usr/local/bin/lego \
           --path $LEGO_PATH \

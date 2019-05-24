@@ -4,7 +4,6 @@ Documentation=https://github.com/etcd-io/etcd
 After=network.target
 
 [Service]
-User=etcd
 Type=notify
 EnvironmentFile=-/config/etcd/etcd.conf
 Environment=ETCD_DATA_DIR=/config/etcd/data/
