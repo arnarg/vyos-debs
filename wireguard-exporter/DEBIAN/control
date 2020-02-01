@@ -1,0 +1,8 @@
+Package: wireguard-exporter
+Version: 3.2.2-0
+Section: base
+Priority: optional
+Architecture: amd64
+Maintainer: Arnar Ingason <codedbearder@arnarg.fastmail.com>
+Description: wireguard_exporter
+ A Prometheus exporter for WireGuard, written in Rust
